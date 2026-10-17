@@ -1,0 +1,101 @@
+/* 1. Use um modelo de caixa mais intuitivo */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remova as margens e preenchimentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Defina a altura e o comportamento do documento */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /* Melhora a suavização de fontes */
+  -webkit-font-smoothing: antialiased;
+  /* Altura de linha padrão mais legível */
+  line-height: 1.5;
+}
+
+/* 4. Melhore o comportamento de mídias (imagens, vídeos, etc.) */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Remova estilos padrão de formulários */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Evite estouros de texto */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Remova estilos padrão de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 8. Links sem decoração padrão opcional */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#carteira {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 16px;
+  height: 100vh;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+#carteira .home {
+  background-color: #0094F2;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0 0 20px 20px;
+  
+}
+
+#carteira .home h1 {
+ font-size: 18px;;
+}
+
+#carteira .home p {
+ font-size: 14px;;
+}
+
+#carteira img {
+  width: 100%;
+  margin-bottom: 20px;
+}
